@@ -1,13 +1,3 @@
-//function TicketBucket
-  //this.ticketHolders =
-  // this.ticketId = 0
-
-
-//TicketBucket.prototype.addTicketHolder = function(ticketHolder) {
-  // ticketHolder.id = this.assignId();
-  //this.ticketHolder.push(ticketHolder);
-
-
 
 // Business Logic for TicketHolders
 function TicketHolder(movieTitle, showTime, ticketHolderAge){
@@ -23,8 +13,6 @@ TicketHolder.prototype.ticketHolderprice = function() {
 
 
 
-//if ("form#movieTime" === "12pm") moviePrice === -
-
 // User interface logic
 
 $(document).ready(function() {
@@ -34,19 +22,8 @@ $(document).ready(function() {
     let showTime = parseInt($("#showtime").val());
     let ticketHolderAge = parseInt($("#age").val());
     let newTicketHolder = new TicketHolder(movieTitle, showTime, ticketHolderAge)
-    //newTicketHolder.ticketHolderp
     $("#output").show();
     $("#ticketPrice").text(newTicketHolder.ticketHolderprice());
   });
 
 });
-
-
-  //let ticketBucket = new TicketBucket();
-  // attachTicketHolderListeners(ticketBucket);
-  //$("form#ticket-profile").submit(function(event) {
-    //event.prevent(Default();
-    // input variables
-    // output variables
-    //let newTicketHolder = new ticketHolder(movieTitle, showTime, ticketHolderAge);
-    //ticketBucket.addTicketHolder(newTicketHolder)
