@@ -6,6 +6,33 @@
   <title>Document</title>
 </head>
 <body>
-
+  <form id="ticketProfile">
+    <div class="row">
+      <p>
+        Which movie to do you want to see?
+        <select class="form-control" id="movieTitle"></select>
+          <option value="5">Armageddon</option>
+          <option value="4">Sonic: the movie</option>
+          <option value="3">Casablanca</option>
+        </select>
+      </p>
+      <p>
+        <select class="form-control" id="showtime"></select>
+          <option value="5">11am</option>
+          <option value="4">2pm</option>
+          <option value="3">5pm</option>
+      </p>
+      <p>
+        <select class="form-control" id="age"></select>
+          <option value="5">Senior (60+)</option>
+          <option value="4">Adult (18+)</option>
+          <option value="3">Junior (under 18)</option>
+      </p>
+    </div>
+    <button class="submit" type="btn">Process your ticket request</button>
+  </form>
+<div id="output">
+  <p>Your total for today's movie is <span id = ticketPrice></span></p>
+</div>
 </body>
 </html>
