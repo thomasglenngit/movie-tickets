@@ -1,23 +1,23 @@
-function TicketBucket() {
-  this.ticketHolders = []
+//function TicketBucket
+  //this.ticketHolders =
   // this.ticketId = 0
-}
 
-TicketBucket.prototype.addTicketHolder = function(ticketHolder) {
+
+//TicketBucket.prototype.addTicketHolder = function(ticketHolder) {
   // ticketHolder.id = this.assignId();
-  this.ticketHolder.push(ticketHolder);
-}
+  //this.ticketHolder.push(ticketHolder);
+
 
 
 // Business Logic for TicketHolders
-function ticketHolder(movieTitle, showTime, ticketHolderAge){
+function TicketHolder(movieTitle, showTime, ticketHolderAge){
   this.movieTitle = movieTitle;
   this.showTime = showTime;
   this.ticketHolderAge = ticketHolderAge;
-  this.ticketPrice = "";
+  this.price = "";
 }
 
-ticketHolder.prototype.ticketPrice = function() {
+TicketHolder.prototype.ticketHolderprice = function() {
   return this.movieTitle + this.showTime - this.ticketHolderAge;
 }
 
@@ -29,12 +29,14 @@ ticketHolder.prototype.ticketPrice = function() {
 
 $(document).ready(function() {
   $("form#ticketProfile").submit(function(event) {
+    event.preventDefault();
     let movieTitle = parseInt($("#movieTitle").val());
-    let showTime = parseInt($("#showTime").val());
-    let ticketHolderAge = parseInt($("#ticketHolderAge").val());
-    let newTicketPrice = new TicketPrice(movieTitle, showTime, ticketHolderAge)
-
-    $("#output").text(newTicketPrice.ticketPrice());
+    let showTime = parseInt($("#showtime").val());
+    let ticketHolderAge = parseInt($("#age").val());
+    let newTicketHolder = new TicketHolder(movieTitle, showTime, ticketHolderAge)
+    //newTicketHolder.ticketHolderp
+    $("#output").show();
+    $("#ticketPrice").text(newTicketHolder.ticketHolderprice());
   });
 
 });
@@ -48,4 +50,3 @@ $(document).ready(function() {
     // output variables
     //let newTicketHolder = new ticketHolder(movieTitle, showTime, ticketHolderAge);
     //ticketBucket.addTicketHolder(newTicketHolder)
-    )
